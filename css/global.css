@@ -39,3 +39,22 @@ body{
   padding: 0;
   box-sizing: border-box;
 }
+
+a{
+  text-decoration: none;
+}
+
+
+/* custom container */
+.container{
+  width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+/* screens larger than 1200px */
+@media screen and (min-width: 1200px) {
+  .container{
+    max-width: 1140px;
+  }
+}
