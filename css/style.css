@@ -1,3 +1,4 @@
 /* local imports */
 @import 'global.css';
-@import 'navbar.css';
+@import 'navbar.css'; /*navbar design*/
+@import 'home.css'; /*home section design*/
