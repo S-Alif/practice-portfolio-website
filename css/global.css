@@ -87,9 +87,45 @@ a{
   margin: 0 auto;
 }
 
+/* custom cards row */
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-row .cards {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+
+/* screens larger than 768 */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 750px;
+  }
+
+  .card-row .cards {
+    width: 50%;
+  }
+}
+/* screens larger than 991px */
+@media screen and (min-width: 991px) {
+  .container {
+    max-width: 950px;
+  }
+
+  .card-row .cards {
+    width: 33%;
+  }
+}
 /* screens larger than 1200px */
 @media screen and (min-width: 1200px) {
-  .container{
+  .container {
     max-width: 1140px;
+  }
+
+  .card-row .cards {
+    width: 33%;
   }
 }

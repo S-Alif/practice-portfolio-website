@@ -1,0 +1,29 @@
+/* service section cards */
+.service .service-cards{
+  padding-top: 40px;
+}
+.service .cards .card-content{
+  border: 2px solid var(--gray);
+  padding: 25px;
+  transition: 0.2s;
+}
+.service .cards .card-content:hover{
+  border: 2px solid var(--black);
+  transition: 0.2s;
+}
+.service .card-content i{
+  font-size: 30px;
+}
+.service .card-content h4{
+  font-size: 26px;
+  font-weight: 700;
+  font-family: var(--font-2);
+  text-transform: capitalize;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--gray);
+  margin-bottom: 20px;
+}
+.service .card-content p{
+  line-height: 1.5;
+}
