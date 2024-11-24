@@ -27,3 +27,82 @@
 .service .card-content p{
   line-height: 1.5;
 }
+
+
+/* portfolio design */
+.portfolio .controls{
+  text-align: center;
+  padding: 40px 0;
+}
+.portfolio .controls .control-btn{
+  background: transparent;
+  border: 2px solid var(--black);
+  padding: 10px 22px;
+  font-size: 17px;
+  font-weight: 500;
+  margin: 10px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.portfolio .controls .control-btn:hover{
+  background: var(--black);
+  color: var(--light-gray);
+  transition: all 0.3s;
+}
+
+
+/* portfolio card content */
+.portfolio .card-content{
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.portfolio .card-content .card-img{
+  width: 100%;
+  height: 270px;
+  overflow: hidden;
+}
+.portfolio .card-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.portfolio .card-content .overlay{
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* opacity: 0; */
+  transition: 0.5s;
+}
+/* hover effect */
+.portfolio .card-content:hover .overlay{
+  top: 0;
+  /* opacity: 1; */
+  transition: all 0.5s;
+}
+.portfolio .card-content:hover .overlay .text{
+  padding-top: 0;
+  opacity: 1;
+  transition: all 0.5s;
+  transition-delay: 0.5s;
+}
+
+.portfolio .overlay .text{
+  padding-top: 20px;
+  opacity: 0;
+  text-align: center;
+  color: var(--light-gray);
+  transition: all 0.5s;
+}
+.portfolio .overlay .text h4{
+  padding-bottom: 15px;
+  font-size: 22px;
+}
