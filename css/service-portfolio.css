@@ -74,18 +74,19 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
   position: absolute;
-  top: 100%;
+  top: 0;
   left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* opacity: 0; */
+  opacity: 0;
+  transform: scale(0.8);
   transition: 0.5s;
 }
 /* hover effect */
 .portfolio .card-content:hover .overlay{
-  top: 0;
-  /* opacity: 1; */
+  opacity: 1;
+  transform: scale(1);
   transition: all 0.5s;
 }
 .portfolio .card-content:hover .overlay .text{
